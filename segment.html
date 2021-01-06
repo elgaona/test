@@ -1,0 +1,58 @@
+<html>    
+    <header>
+        <title>Segment EXAMPLE</title>
+    </header>
+
+    <body>
+        <h1>Log events via the JS SDK!</h1>
+        
+        <p id="currentUser">There is no user logged in! This program logs events as Anonymous when there is no user logged in.</p>
+        
+        <p><label for="fname">Full name:</label><br>
+        <input type="text" id="UserID" name="fname"/>
+            
+        <p><label>Favorite food:</label><br>
+            <input type="text" id="favfood"/></p>
+        
+        <p><label>Age:</label><br>
+            <input type="text" id="age"/></p>
+        </p>
+    
+         <p><label>Color of your current shirt:</label><br>
+            <input type="text" id="color"/></p>
+    
+        <p><label>Day of the week:</label><br>
+            <input type="text" id="height"/></p>
+    
+        <button onclick="setUserID();userProps();">Log In</button>
+    
+        <p><button onclick="logevent()">Log event 1</button>
+        <button onclick="logevent2()">Log event 2</button>
+        <button onclick="logevent3()">Log event 3</button>
+        <p id="event">No events have been logged...</p></p>
+    
+        <p>
+            <label for="cars">Purchase an item:</label>
+            <select name="item" id="items">
+                <option value="socks">Socks</option>
+                <option value="Playstation 5">Playstation 5</option>
+                <option value="bananas">Banana</option>
+                <option value="earrings">Earrings</option>
+            </select>
+            <br><br>
+            <label for="amount">Quantity:</label>
+            <select name="quantities" id="quantity">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+            </select>
+            <p id="purchase">No items have been purchased... :(</p>
+            <button onclick="item()">Purchase</button>
+        </p>    
+    
+        <p>
+            <button onclick="logOut()">Log Out</button>
+        </p> 
+    </body>
+</html>
